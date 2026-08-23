@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/weightedSum (snapshot).go">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/weightedSum (snapshot).go" />
+              <option name="originalContent" value="package weightedSum&#10;&#10;import &quot;sort&quot;&#10;&#10;func weightedSum(parent []int, nums []int) int64 {&#10;&#9;height := 1&#10;&#9;tree := make(map[int]int)&#10;&#9;// 初始化所有节点为 -2，表示还未计算&#10;&#9;for i := range parent {&#10;&#9;&#9;tree[i] = -2&#10;&#9;}&#10;&#9;tree[0] = 1&#10;&#10;&#9;// 收集第一轮无法处理的节点（父节点还未就绪）&#10;&#9;var pending []int&#10;&#9;for i := 1; i &lt; len(parent); i++ {&#10;&#9;&#9;l := tree[parent[i]]&#10;&#9;&#9;if l == -2 {&#10;&#9;&#9;&#9;pending = append(pending, i)&#10;&#9;&#9;&#9;continue&#10;&#9;&#9;}&#10;&#9;&#9;tree[i] = l + 1&#10;&#9;&#9;if l+1 &gt; height {&#10;&#9;&#9;&#9;height = l + 1&#10;&#9;&#9;}&#10;&#9;}&#10;&#10;&#9;// 按父节点的深度升序排序，保证修复时父节点已经就绪&#10;&#9;sort.Slice(pending, func(a, b int) bool {&#10;&#9;&#9;return tree[parent[pending[a]]] &lt; tree[parent[pending[b]]]&#10;&#9;})&#10;&#10;&#9;// 一次遍历修复&#10;&#9;for _, k := range pending {&#10;&#9;&#9;tree[k] = tree[parent[k]] + 1&#10;&#9;&#9;if tree[k] &gt; height {&#10;&#9;&#9;&#9;height = tree[k]&#10;&#9;&#9;}&#10;&#9;}&#10;&#10;&#9;res := int64(0)&#10;&#9;for k, v := range tree {&#10;&#9;&#9;res += int64(nums[k] * (height - v + 1))&#10;&#9;}&#10;&#10;&#9;return res&#10;}&#10;" />
+              <option name="updatedContent" value="package weightedSum&#10;&#10;func weightedSum(parent []int, nums []int) int64 {&#10;&#9;n := len(parent)&#10;&#9;depth := make([]int, n)&#10;&#9;children := make([][]int, n)&#10;&#10;&#9;// 建立子节点列表&#10;&#9;for i := 1; i &lt; n; i++ {&#10;&#9;&#9;children[parent[i]] = append(children[parent[i]], i)&#10;&#9;}&#10;&#10;&#9;// BFS 计算每个节点的深度（从 1 开始）&#10;&#9;depth[0] = 1&#10;&#9;maxDepth := 1&#10;&#9;queue := []int{0}&#10;&#9;for len(queue) &gt; 0 {&#10;&#9;&#9;cur := queue[0]&#10;&#9;&#9;queue = queue[1:]&#10;&#9;&#9;for _, child := range children[cur] {&#10;&#9;&#9;&#9;depth[child] = depth[cur] + 1&#10;&#9;&#9;&#9;if depth[child] &gt; maxDepth {&#10;&#9;&#9;&#9;&#9;maxDepth = depth[child]&#10;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;queue = append(queue, child)&#10;&#9;&#9;}&#10;&#9;}&#10;&#10;&#9;res := int64(0)&#10;&#9;for i := 0; i &lt; n; i++ {&#10;&#9;&#9;res += int64(nums[i]) * int64(maxDepth-depth[i]+1)&#10;&#9;}&#10;&#9;return res&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
