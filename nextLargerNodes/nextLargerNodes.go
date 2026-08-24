@@ -1,9 +1,9 @@
 package nextLargerNodes
 
-import "leetcode"
+import "leetcode/common"
 
-func nextLargerNodes(head *leetcode.ListNode) []int {
-	var stack []*leetcode.ListNode
+func nextLargerNodes(head *common.ListNode) []int {
+	var stack []*common.ListNode
 	for cur := head; cur != nil; cur = cur.Next {
 
 		for i := len(stack) - 1; i >= 0 && cur.Val > stack[i].Val; i-- {

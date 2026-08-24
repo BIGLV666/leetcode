@@ -1,2 +1,13 @@
 # IDE 插件临时快照
 .proxyai/
+
+# 安全扫描产物
+.mimosa/
+
+# 编译产物
+*.exe
+*.out
+
+# Python 缓存
+__pycache__/
+*.pyc

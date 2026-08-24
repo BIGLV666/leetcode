@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"leetcode"
+	"leetcode/common"
 )
 
-func dfs(root *leetcode.TreeNode, value int) *leetcode.TreeNode {
-	treeNode := &leetcode.TreeNode{Val: value}
+func dfs(root *common.TreeNode, value int) *common.TreeNode {
+	treeNode := &common.TreeNode{Val: value}
 	if root == nil {
 		return treeNode
 	}
@@ -17,8 +17,8 @@ func dfs(root *leetcode.TreeNode, value int) *leetcode.TreeNode {
 	}
 	return root
 }
-func bstFromPreorder(preorder []int) *leetcode.TreeNode {
-	root := &leetcode.TreeNode{Val: preorder[0]}
+func bstFromPreorder(preorder []int) *common.TreeNode {
+	root := &common.TreeNode{Val: preorder[0]}
 	for i := range preorder {
 		dfs(root, preorder[i])
 	}

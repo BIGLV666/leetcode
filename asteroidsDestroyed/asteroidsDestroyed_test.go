@@ -1,15 +1,15 @@
 package asteroidsDestroyed
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test1(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		asteroidsDestroyed2,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{10, []int{3,9,19,5,21}},
 				Expected: true,

@@ -1,15 +1,15 @@
 package numJewelsInStones
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		numJewelsInStones,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{"aA", "aAAbbbb"},
 				Expected: 3,

@@ -1,15 +1,15 @@
 package minSubsequence
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		minSubsequence,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]int{4, 3, 10, 9, 8}},
 				Expected: []int{10, 9},

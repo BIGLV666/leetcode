@@ -1,4 +1,4 @@
-package leetcode
+package common
 
 func BuildListNode(n []int) *ListNode {
 	dummy := &ListNode{}

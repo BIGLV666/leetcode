@@ -1,7 +1,7 @@
 package codec
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"strconv"
 	"strings"
 )
@@ -22,11 +22,11 @@ func Constructor() Codec {
 	return Codec{}
 }
 
-func str(root *leetcode.TreeNode) string {
+func str(root *common.TreeNode) string {
 	if root == nil {
 		return "null"
 	}
-	q := []*leetcode.TreeNode{root}
+	q := []*common.TreeNode{root}
 	sb := strings.Builder{}
 	for len(q) > 0 {
 		node := q[0]
@@ -44,22 +44,22 @@ func str(root *leetcode.TreeNode) string {
 }
 
 // Serializes a tree to a single string.
-func (this *Codec) serialize(root *leetcode.TreeNode) string {
+func (this *Codec) serialize(root *common.TreeNode) string {
 	return str(root)
 }
 
 // Deserializes your encoded data to tree.
-func (this *Codec) deserialize(data string) *leetcode.TreeNode {
+func (this *Codec) deserialize(data string) *common.TreeNode {
 	sp := strings.Split(data, ",")
-	var build func() *leetcode.TreeNode
-	build = func() *leetcode.TreeNode {
+	var build func() *common.TreeNode
+	build = func() *common.TreeNode {
 		if sp[0] == "null" {
 			sp = sp[1:]
 			return nil
 		}
 		val, _ := strconv.Atoi(sp[0])
 		sp = sp[1:]
-		return &leetcode.TreeNode{val, build(), build()}
+		return &common.TreeNode{val, build(), build()}
 	}
 	return build()
 

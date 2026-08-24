@@ -1,15 +1,15 @@
 package sumGame
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		sumGame,
-	[]leetcode.TestCase{
+	[]common.TestCase{
 		{
 			Args: []any{"5023"},
 			Expected: false,

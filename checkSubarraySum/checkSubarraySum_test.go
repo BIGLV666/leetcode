@@ -1,15 +1,15 @@
 package checkSubarraySum
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		checkSubarraySum,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{[]int{23,2,4,6,7},6},
 				Expected: true,

@@ -1,15 +1,15 @@
 package uniqueXortriplets
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test1(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		uniqueXorTriplets,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]int{1, 3}},
 				Expected: 2,

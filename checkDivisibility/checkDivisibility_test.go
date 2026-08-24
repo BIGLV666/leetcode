@@ -1,15 +1,15 @@
 package checkDivisibility
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		checkDivisibility,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{99},
 				Expected: true,

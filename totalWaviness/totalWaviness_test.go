@@ -1,13 +1,13 @@
 package totalWaviness	
 import (
 	"testing"
-	"leetcode"
+	"leetcode/common"
 )
 func TestTotalWaviness(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		totalWaviness,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{1,100},
 				Expected: 0,

@@ -1,15 +1,15 @@
 package maximumLengthSubstring
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		maximumLengthSubstring,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{"bcbbbcba"},
 				Expected: 4,

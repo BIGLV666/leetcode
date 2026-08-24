@@ -1,15 +1,15 @@
 package lengthOfLIS
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		lengthOfLIS,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]int{10, 9, 2, 5, 3, 7, 101, 18}},
 				Expected: 4,

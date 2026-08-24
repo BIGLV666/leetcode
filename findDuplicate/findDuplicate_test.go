@@ -1,14 +1,14 @@
 package findDuplicate
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 func Test1(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		findDuplicate,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{
 					[]string{"root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"},

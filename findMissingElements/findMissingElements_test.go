@@ -1,14 +1,14 @@
 package findMissingElements
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 func TestFindMissingElements(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		findMissingElements,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{[]int{1,4,2,5}},
 				Expected: []int{3},

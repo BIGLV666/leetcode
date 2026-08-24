@@ -1,7 +1,7 @@
 package smallestfromleaf
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"strings"
 )
 
@@ -33,11 +33,11 @@ func min(a, b string) string {
 	return b
 }
 
-func smallestFromLeaf(root *leetcode.TreeNode) string {
+func smallestFromLeaf(root *common.TreeNode) string {
 	return dfs(root, []byte{})
 }
 
-func dfs(root *leetcode.TreeNode, path []byte) string {
+func dfs(root *common.TreeNode, path []byte) string {
 	if root == nil {
 		sb := strings.Builder{}
 		n := len(path)

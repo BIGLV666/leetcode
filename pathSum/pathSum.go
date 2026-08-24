@@ -1,7 +1,7 @@
 package pathSum
 
 import (
-	"leetcode"
+	"leetcode/common"
 )
 
 /**
@@ -13,7 +13,7 @@ import (
  * }
  */
 
-func pathSum(root *leetcode.TreeNode, targetSum int) [][]int {
+func pathSum(root *common.TreeNode, targetSum int) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
@@ -21,8 +21,8 @@ func pathSum(root *leetcode.TreeNode, targetSum int) [][]int {
 	var path = []int{}
 	var sum = 0
 
-	var dfs func(root *leetcode.TreeNode, t int)
-	dfs = func(root *leetcode.TreeNode, t int) {
+	var dfs func(root *common.TreeNode, t int)
+	dfs = func(root *common.TreeNode, t int) {
 
 		if root == nil {
 			return

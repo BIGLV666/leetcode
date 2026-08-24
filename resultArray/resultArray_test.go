@@ -1,15 +1,15 @@
 package resultArray
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		resultArray,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]int{2, 1, 3}},
 				Expected: []int{2, 3, 1},

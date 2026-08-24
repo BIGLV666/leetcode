@@ -1,15 +1,15 @@
 package furthestDistanceFromOrigin
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		furthestDistanceFromOrigin,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{"L_RL__R"},
 				Expected: 3,

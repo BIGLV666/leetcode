@@ -1,11 +1,11 @@
 package main
 
 import (
-	leetcode "leetcode"
+	"leetcode/common"
 	"fmt"
 )
 
-func length(head *leetcode.ListNode) int {
+func length(head *common.ListNode) int {
 	count := 0
 	for head != nil {
 		head = head.Next
@@ -13,7 +13,7 @@ func length(head *leetcode.ListNode) int {
 	}
 	return count
 }
-func removeNthFromEnd(head *leetcode.ListNode, n int) *leetcode.ListNode {
+func removeNthFromEnd(head *common.ListNode, n int) *common.ListNode {
 	count := 1
 	k := length(head)
 	if k == 1 {
@@ -36,9 +36,9 @@ func removeNthFromEnd(head *leetcode.ListNode, n int) *leetcode.ListNode {
 }
 func main() {
 	arr := []int{1, 2, 3, 4, 5}
-	res := removeNthFromEnd(leetcode.BuildListNode(arr), 2)
-	fmt.Println(leetcode.PrintListNode(res))
+	res := removeNthFromEnd(common.BuildListNode(arr), 2)
+	fmt.Println(common.PrintListNode(res))
 	arr2 := []int{1, 2}
-	res = removeNthFromEnd(leetcode.BuildListNode(arr2), 2)
-	fmt.Println(leetcode.PrintListNode(res))
+	res = removeNthFromEnd(common.BuildListNode(arr2), 2)
+	fmt.Println(common.PrintListNode(res))
 }

@@ -1,15 +1,15 @@
 package stringMatching
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		stringMatching,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]string{"mass", "as", "hero", "superhero"}},
 				Expected: []string{"as", "hero"},

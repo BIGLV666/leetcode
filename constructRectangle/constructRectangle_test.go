@@ -1,15 +1,15 @@
 package constructrectangle
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test1(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		constructRectangle,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:[]any{ 4},
 				Expected: []any{2,2},

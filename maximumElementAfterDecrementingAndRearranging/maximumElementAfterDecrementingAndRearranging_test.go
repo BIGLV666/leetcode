@@ -1,15 +1,15 @@
 package maximumElementAfterDecrementingAndRearranging
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func TestMaximumElementAfterDecrementingAndRearranging(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		maximumElementAfterDecrementingAndRearranging,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]int{2,2,1,2,1}},
 				Expected: 2,

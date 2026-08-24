@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leetcode"
+	"leetcode/common"
 )
 
 func findJudge(n int, trust [][]int) int {
@@ -21,9 +21,9 @@ func findJudge(n int, trust [][]int) int {
 }
 
 func main() {
-	fmt.Println(findJudge(2, leetcode.BuildIntArray("[[1,2]]")))
-	fmt.Println(findJudge(3, leetcode.BuildIntArray("[[1,3],[2,3]]")))
-	fmt.Println(findJudge(3, leetcode.BuildIntArray("[[1,3],[2,3],[3,1]]")))
-	fmt.Println(findJudge(3, leetcode.BuildIntArray("[[1,2],[2,3]]")))
-	fmt.Println(findJudge(4, leetcode.BuildIntArray("[[1,3],[1,4],[2,3],[2,4],[4,3]]")))
+	fmt.Println(findJudge(2, common.BuildIntArray("[[1,2]]")))
+	fmt.Println(findJudge(3, common.BuildIntArray("[[1,3],[2,3]]")))
+	fmt.Println(findJudge(3, common.BuildIntArray("[[1,3],[2,3],[3,1]]")))
+	fmt.Println(findJudge(3, common.BuildIntArray("[[1,2],[2,3]]")))
+	fmt.Println(findJudge(4, common.BuildIntArray("[[1,3],[1,4],[2,3],[2,4],[4,3]]")))
 }

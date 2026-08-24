@@ -1,16 +1,16 @@
 package stoneGameIX
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 
 func TestStoneGameIX(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		stoneGameIX,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{[]int{2,1}},
 				Expected: true,

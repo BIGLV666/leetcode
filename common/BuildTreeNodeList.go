@@ -1,4 +1,4 @@
-package leetcode
+package common
 
 func BuildTreeNode(values []any) *TreeNode {
 	if len(values) == 0 || values[0] == nil {

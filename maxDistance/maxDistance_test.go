@@ -1,21 +1,21 @@
 package maxDistance
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		maxDistance,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
-				Args:     []any{leetcode.BuildIntArray("[[1,2,3],[4,5],[1,2,3]]")},
+				Args:     []any{common.BuildIntArray("[[1,2,3],[4,5],[1,2,3]]")},
 				Expected: 4,
 			},
 			{
-				Args:     []any{leetcode.BuildIntArray("[[1],[1]]")},
+				Args:     []any{common.BuildIntArray("[[1],[1]]")},
 				Expected: 0,
 			},
 		})

@@ -1,15 +1,15 @@
 package gcdofstrings
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test1(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		gcdOfStrings,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{"ABCABC","ABC"},
 				Expected: "ABC",

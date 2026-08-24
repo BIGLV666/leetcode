@@ -1,4 +1,4 @@
-package leetcode
+package common
 
 import (
 	"encoding/json"

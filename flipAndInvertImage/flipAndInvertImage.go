@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leetcode"
+	"leetcode/common"
 	"strings"
 )
 
@@ -21,7 +21,7 @@ func flipAndInvertImage(image [][]int) [][]int {
 	return image
 }
 func main() {
-	fmt.Println(flipAndInvertImage(leetcode.BuildIntArray("[[1,1,0],[1,0,1],[0,0,0]]")))
-	fmt.Print(strings.EqualFold(leetcode.IntArrayToString(flipAndInvertImage(leetcode.BuildIntArray("[[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]"))), "[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]"))
+	fmt.Println(flipAndInvertImage(common.BuildIntArray("[[1,1,0],[1,0,1],[0,0,0]]")))
+	fmt.Print(strings.EqualFold(common.IntArrayToString(flipAndInvertImage(common.BuildIntArray("[[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]"))), "[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]"))
 
 }

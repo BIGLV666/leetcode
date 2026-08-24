@@ -1,18 +1,18 @@
 package maxAncestorDiff
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test1(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		maxAncestorDiff,
-		[]leetcode.TestCase{
-			leetcode.TestCase{
+		[]common.TestCase{
+			common.TestCase{
 				Args: []any{
-					leetcode.BuildTreeNode([]any{8, 3, 10, 1, 6, nil, 14, nil, nil, 4, 7, 13}),
+					common.BuildTreeNode([]any{8, 3, 10, 1, 6, nil, 14, nil, nil, 4, 7, 13}),
 				},
 				Expected: 7,
 			},
@@ -21,13 +21,13 @@ func Test1(t *testing.T) {
 }
 
 func Test2(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		maxAncestorDiff,
-		[]leetcode.TestCase{
-			leetcode.TestCase{
+		[]common.TestCase{
+			common.TestCase{
 				Args: []any{
-					leetcode.BuildTreeNode([]any{1, nil, 2, nil, 0, 3}),
+					common.BuildTreeNode([]any{1, nil, 2, nil, 0, 3}),
 				},
 				Expected: 3,
 			},

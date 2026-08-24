@@ -1,15 +1,15 @@
 package replaceWords
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		replaceWords,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]string{"cat", "bat", "rat"}, "the cattle was rattled by the battery"},
 				Expected: "the cat was rat by the bat",

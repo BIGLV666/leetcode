@@ -1,7 +1,7 @@
 package maxAncestorDiff
 
 import (
-	"leetcode"
+	"leetcode/common"
 )
 
 /*
@@ -16,7 +16,7 @@ import (
 
 @link{https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/description/}
 */
-func maxAncestorDiff(root *leetcode.TreeNode) int {
+func maxAncestorDiff(root *common.TreeNode) int {
 
 	return dfs(root, root.Val, root.Val)
 }
@@ -26,7 +26,7 @@ func abs(a int) int {
 	}
 	return a
 }
-func dfs(root *leetcode.TreeNode, mi, ma int) int {
+func dfs(root *common.TreeNode, mi, ma int) int {
 	if root == nil {
 		return 0
 	}

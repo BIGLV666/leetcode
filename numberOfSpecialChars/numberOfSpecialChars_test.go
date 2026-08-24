@@ -1,15 +1,15 @@
 package numberOfSpecialChars
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		numberOfSpecialChars,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{"aaAbcBC"},
 				Expected: 3,

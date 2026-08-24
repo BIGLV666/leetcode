@@ -1,6 +1,6 @@
 package isBalanced
 
-import "leetcode"
+import "leetcode/common"
 
 /**
  * Definition for a binary tree node.
@@ -10,13 +10,13 @@ import "leetcode"
  *     Right *TreeNode
  * }
  */
-func isBalanced(root *leetcode.TreeNode) bool {
+func isBalanced(root *common.TreeNode) bool {
 	if root == nil {
 		return true
 	}
 	return abs(dfs(root.Left)-dfs(root.Right)) <= 1 && isBalanced(root.Left) && isBalanced(root.Right)
 }
-func dfs(root *leetcode.TreeNode) int {
+func dfs(root *common.TreeNode) int {
 	if root == nil {
 		return 0
 	}

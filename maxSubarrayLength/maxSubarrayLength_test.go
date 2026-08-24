@@ -2,13 +2,13 @@ package maxsubarraylength
 
 import (
 	"testing"
-	"leetcode"
+	"leetcode/common"
 )
 func Test1(t *testing.T){
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		maxSubarrayLength,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{[]int{1,2,3,1,2,3,1,2},2},
 				Expected: 6,

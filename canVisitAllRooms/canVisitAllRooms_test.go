@@ -2,12 +2,12 @@ package canVisitAllRooms
 
 import (
 	"fmt"
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test1(t *testing.T) {
-	rooms := leetcode.BuildIntArray("[[1],[2],[3],[]]")
+	rooms := common.BuildIntArray("[[1],[2],[3],[]]")
 	result := canVisitAllRooms(rooms)
 	expected := true
 	if result != true {
@@ -16,7 +16,7 @@ func Test1(t *testing.T) {
 	}
 }
 func Test2(t *testing.T) {
-	rooms := leetcode.BuildIntArray("[[1,3],[3,0,1],[2],[0]]")
+	rooms := common.BuildIntArray("[[1,3],[3,0,1],[2],[0]]")
 	result := canVisitAllRooms(rooms)
 	expected := false
 	if result != expected {
@@ -25,7 +25,7 @@ func Test2(t *testing.T) {
 	}
 }
 func Test3(t *testing.T) {
-	rooms := leetcode.BuildIntArray("[[1],[2],[2],[]]")
+	rooms := common.BuildIntArray("[[1],[2],[2],[]]")
 	result := canVisitAllRooms(rooms)
 	expected := false
 	if result != expected {

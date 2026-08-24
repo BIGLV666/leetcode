@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leetcode"
+	"leetcode/common"
 	"math"
 )
 
@@ -35,6 +35,6 @@ func leastBricks(wall [][]int) int {
 }
 
 func main() {
-	fmt.Println(leastBricks(leetcode.BuildIntArray(" [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]")))
-	fmt.Println(leastBricks(leetcode.BuildIntArray("[[1,1],[2],[1,1]]")))
+	fmt.Println(leastBricks(common.BuildIntArray(" [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]")))
+	fmt.Println(leastBricks(common.BuildIntArray("[[1,1],[2],[1,1]]")))
 }

@@ -1,16 +1,16 @@
 package wiggleSort
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test1(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		wiggleSort,
-		[]leetcode.TestCase{
-			leetcode.TestCase{
+		[]common.TestCase{
+			common.TestCase{
 				Args: []any{
 					[]int{1, 1, 2, 1, 2, 2, 1},
 				},

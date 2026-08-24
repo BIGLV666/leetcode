@@ -1,14 +1,14 @@
 package missingInteger
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 func TestMissingInteger(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		missingInteger,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{[]int{1,2,3,2,5}},
 				Expected: 6,

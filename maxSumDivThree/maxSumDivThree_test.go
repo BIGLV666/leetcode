@@ -1,15 +1,15 @@
 package maxSumDivThree
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		maxSumDivThree,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args:     []any{[]int{3, 6, 5, 1, 8}},
 				Expected: 18,

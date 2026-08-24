@@ -1,15 +1,15 @@
 package pivotArray
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func TestPivotArray(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		pivotArray,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
 				Args: []any{[]int{9,12,5,10,14,3,10},10},
 				Expected: []int{9,5,3,10,10,12,14},

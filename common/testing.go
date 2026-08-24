@@ -1,4 +1,4 @@
-package leetcode
+package common
 
 import (
 	"fmt"
@@ -13,9 +13,9 @@ import (
 //
 // 用法示例：
 //
-//	leetcode.RunTests(t, canVisitAllRooms, []leetcode.TestCase{
-//	    {Args: []any{leetcode.BuildIntArray("[[1],[2],[3],[]]")}, Expected: true},
-//	    {Args: []any{leetcode.BuildIntArray("[[1,3],[3,0,1],[2],[0]]")}, Expected: false},
+//	common.RunTests(t, canVisitAllRooms, []common.TestCase{
+//	    {Args: []any{common.BuildIntArray("[[1],[2],[3],[]]")}, Expected: true},
+//	    {Args: []any{common.BuildIntArray("[[3,0,1],[2],[0]]")}, Expected: false},
 //	})
 type TestCase struct {
 	Args     []any // 按照函数参数顺序传入
@@ -36,7 +36,7 @@ func RunTests(t *testing.T, fn any, cases []TestCase) {
 
 		// 调用函数
 		out := fnVal.Call(in)
-		
+
 		// 收集实际返回值
 		var got any
 		if fnType.NumOut() == 1 {

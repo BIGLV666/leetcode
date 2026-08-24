@@ -1,17 +1,17 @@
 package kWeakestRows
 
 import (
-	"leetcode"
+	"leetcode/common"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	leetcode.RunTests(
+	common.RunTests(
 		t,
 		kWeakestRows,
-		[]leetcode.TestCase{
+		[]common.TestCase{
 			{
-				Args:     []any{leetcode.BuildIntArray("[[1,1,0,0,0],\n [1,1,1,1,0],\n [1,0,0,0,0],\n [1,1,0,0,0],\n [1,1,1,1,1]]"), 3},
+				Args:     []any{common.BuildIntArray("[[1,1,0,0,0],\n [1,1,1,1,0],\n [1,0,0,0,0],\n [1,1,0,0,0],\n [1,1,1,1,1]]"), 3},
 				Expected: []int{2, 0, 3},
 			},
 		})
