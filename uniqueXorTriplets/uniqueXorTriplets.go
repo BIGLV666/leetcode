@@ -1,4 +1,5 @@
 package uniqueXortriplets
+
 /**
  * @Description: 2958. 三元异或为零的三元组
  * @link: {https://leetcode.cn/problems/number-of-unique-xor-triplets-ii/submissions/741749677/?envType=daily-question&envId=2026-08-12}

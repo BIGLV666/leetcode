@@ -58,4 +58,3 @@ func TestNegativeNumbers(t *testing.T) {
 		t.Errorf("got %v, want %v", result, expected)
 	}
 }
-

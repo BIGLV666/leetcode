@@ -1,4 +1,6 @@
+package shortestBeautifulSubstring;
 
+import shortestBeautifulSubstring.Solution;
 
 public class Test {
     private static final Solution solution = new Solution();

@@ -17,11 +17,10 @@ func f(s string) string {
 			continue
 		}
 
-			res[top] = chars[i]
-			top++
+		res[top] = chars[i]
+		top++
 
 	}
-
 
 	fmt.Println(res[:top])
 	return string(res[0:top])

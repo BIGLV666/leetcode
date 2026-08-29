@@ -11,7 +11,7 @@ func gameOfLife(board [][]int) {
 			res = f(res, board, i, j)
 		}
 	}
-	copy(board,res)
+	copy(board, res)
 }
 func f(res, b [][]int, i, j int) [][]int {
 	low := i - 1

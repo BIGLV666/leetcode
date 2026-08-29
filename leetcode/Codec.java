@@ -1,3 +1,7 @@
+package leetcode;
+
+import leetcode.TreeNode;
+
 /**
  * 序列化/反序列化快捷入口
  * 提供统一的序列化调用，方便匹配 LeetCode 297 等题目接口

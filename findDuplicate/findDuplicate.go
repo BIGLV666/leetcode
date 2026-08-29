@@ -1,5 +1,7 @@
 package findDuplicate
+
 import "strings"
+
 /**
  * @Description: 609. 文件系统中的重复文件
  * @link:{https://leetcode.cn/problems/find-duplicate-file-in-system/description/}
@@ -12,10 +14,10 @@ func findDuplicate(paths []string) [][]string {
 		ps := strings.Split(path, " ")
 		for _, p := range ps[1:] {
 			content := getContent(p)
-			group[content] = append(group[content], ps[0]+"/"+deleteContent(p))	
+			group[content] = append(group[content], ps[0]+"/"+deleteContent(p))
 		}
 	}
-    res := [][]string{}
+	res := [][]string{}
 	for _, v := range group {
 		if len(v) > 1 {
 			res = append(res, v)

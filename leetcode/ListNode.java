@@ -1,3 +1,5 @@
+package leetcode;
+
 /**
  * 单链表节点（LeetCode 风格）
  */
@@ -33,8 +35,8 @@ public class ListNode {
         return res;
     }
 
-    /** 将链表输出为 LeetCode 格式字符串 "[1,2,3]" */
-    public static String listToString(ListNode head) {
+    /** 将整条链表序列化为 LeetCode 格式字符串 "[1,2,3]"；null 序列化为 "[]"。 */
+    public static String serializeList(ListNode head) {
         StringBuilder sb = new StringBuilder("[");
         ListNode p = head;
         while (p != null) {
@@ -46,7 +48,12 @@ public class ListNode {
         return sb.toString();
     }
 
-    /** 从 LeetCode 字符串 "[1,2,3]" 反序列化链表 */
+    /** 兼容旧名称：将整条链表序列化。 */
+    public static String listToString(ListNode head) {
+        return serializeList(head);
+    }
+
+    /** 从 LeetCode 字符串 "[1,2,3]" 反序列化链表。 */
     public static ListNode deserializeList(String data) {
         if (data == null || data.equals("[]") || data.length() <= 2) return null;
         String[] parts = data.substring(1, data.length() - 1).split(",");
@@ -61,6 +68,7 @@ public class ListNode {
 
     @Override
     public String toString() {
-        return listToString(this);
+        // 节点自身只表示自己的值；整条链表请使用 serializeList。
+        return String.valueOf(val);
     }
 }

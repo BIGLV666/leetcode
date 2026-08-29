@@ -27,7 +27,7 @@ func Test2(t *testing.T) {
 		t,
 		smallestFromLeaf,
 		[]common.TestCase{
-				{
+			{
 				Args: []any{
 					common.BuildTreeNode([]any{25, 1, 3, 1, 3, 0, 2}),
 				},

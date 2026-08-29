@@ -1,8 +1,8 @@
 package main
 
 import (
-	"leetcode/common"
 	"fmt"
+	"leetcode/common"
 )
 
 func length(head *common.ListNode) int {

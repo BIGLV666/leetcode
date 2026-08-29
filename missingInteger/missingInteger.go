@@ -1,7 +1,5 @@
 package missingInteger
 
-
-
 func missingInteger(nums []int) int {
 	res := 0
 	sum := nums[0]
@@ -9,8 +7,8 @@ func missingInteger(nums []int) int {
 	hashTable[nums[0]] = true
 	for i := 1; i < len(nums); i++ {
 		if nums[i-1]+1 == nums[i] {
-			sum+=nums[i]
-		}else{
+			sum += nums[i]
+		} else {
 			break
 		}
 	}

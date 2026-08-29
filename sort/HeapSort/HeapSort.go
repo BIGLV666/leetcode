@@ -45,7 +45,7 @@ func HeapSort(arr []int) []int {
 //  2. 如果最大的不是 root，则交换 root 与最大子节点
 //  3. 递归对被交换的子节点继续下沉（因为它的子树可能又被破坏了）
 func heapify(arr []int, n, root int) {
-	largest := root      // 假设当前节点是最大的
+	largest := root     // 假设当前节点是最大的
 	left := 2*root + 1  // 左子节点下标（二叉堆用数组表示：左子 = 2i+1）
 	right := 2*root + 2 // 右子节点下标（右子 = 2i+2）
 
@@ -66,4 +66,3 @@ func heapify(arr []int, n, root int) {
 		heapify(arr, n, largest)
 	}
 }
-

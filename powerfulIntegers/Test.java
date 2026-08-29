@@ -1,3 +1,7 @@
+package powerfulIntegers;
+
+import powerfulIntegers.Solution;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -16,7 +20,7 @@ public class Test {
            }
        }
     }
-    
+
 }
 class TestCase{
     int x;

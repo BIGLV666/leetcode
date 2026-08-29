@@ -28,7 +28,6 @@ func TestMyTreeSimple(t *testing.T) {
 		t.Errorf("初始maxLen错误: got %d, want 4", got)
 	}
 
-
 	tree.update(1, 0, 3, 1, 'b')
 	if got := tree.getmaxLen(); got != 2 {
 		t.Errorf(" got %d, want 2", got)
@@ -52,4 +51,3 @@ func TestMyTreeDebug(t *testing.T) {
 		tree.tree[1].leftChar, tree.tree[1].rightChar,
 		tree.tree[1].leftLen, tree.tree[1].rightLen, tree.tree[1].maxLen)
 }
-

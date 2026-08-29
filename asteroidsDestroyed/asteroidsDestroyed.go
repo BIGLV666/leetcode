@@ -3,6 +3,7 @@ package asteroidsDestroyed
 import (
 	"slices"
 )
+
 /**
  * @title: 2126. 摧毁小行星
  * @difficulty: Medium
@@ -54,6 +55,7 @@ func abs(x int) int {
 	}
 	return x
 }
+
 /**
  * @param mass int
  * @param asteroids []int
@@ -64,31 +66,31 @@ func abs(x int) int {
  */
 func asteroidsDestroyed2(mass int, asteroids []int) bool {
 	table := make(map[int]int)
-	minVal:=0
-	maxVal:=0
+	minVal := 0
+	maxVal := 0
 	for _, v := range asteroids {
-		minVal=min(minVal,v)
-		maxVal=max(maxVal,v)
+		minVal = min(minVal, v)
+		maxVal = max(maxVal, v)
 		table[v]++
 	}
-	for i:=minVal;i<=maxVal;i++{
-		if mass<i{
-			if len(table)==0{
+	for i := minVal; i <= maxVal; i++ {
+		if mass < i {
+			if len(table) == 0 {
 				break
 			}
 			return false
 		}
-		count,ok:=table[i]
-		if ok{
-			if mass<i{
+		count, ok := table[i]
+		if ok {
+			if mass < i {
 				return false
 			}
-			mass+=i*count
-			table[i]=-1
+			mass += i * count
+			table[i] = -1
 		}
 	}
 	for _, v := range table {
-		if v!=-1{
+		if v != -1 {
 			return false
 		}
 	}

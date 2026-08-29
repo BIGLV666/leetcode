@@ -13,7 +13,7 @@ func duplicateZeros(arr []int) {
 			count++
 		}
 	}
-	for i := len(arr)-1; i > -1; i-- {
+	for i := len(arr) - 1; i > -1; i-- {
 		if arr[i] == 0 {
 			count--
 		}
@@ -28,14 +28,14 @@ func duplicateZeros(arr []int) {
 
 	}
 }
-func duplicateZeros_test(arr []int)[]int {
+func duplicateZeros_test(arr []int) []int {
 	count := 0
 	for _, v := range arr {
 		if v == 0 {
 			count++
 		}
 	}
-	for i := len(arr)-1; i > -1; i-- {
+	for i := len(arr) - 1; i > -1; i-- {
 		if arr[i] == 0 {
 			count--
 		}

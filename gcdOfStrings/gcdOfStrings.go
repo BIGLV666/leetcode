@@ -1,4 +1,5 @@
 package gcdofstrings
+
 /**
  * @Description: 1071.最大字符串公因子
  * @link{https://leetcode.cn/problems/greatest-common-divisor-of-strings/description/}
