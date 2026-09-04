@@ -11,3 +11,7 @@
 # Python 缓存
 __pycache__/
 *.pyc
+
+# IDE 配置(本地保留,不入库)
+.idea/
+.vscode/
