@@ -1,6 +1,6 @@
 # 题目索引
 
-共 165 题，按题号升序。📝 表示该题附有解题思路笔记。
+共 180 题，按题号升序。📝 表示该题附有解题思路笔记。
 
 | 题号 | 题目                                 | 难度 | 语言   | 笔记                                  |
 |------|--------------------------------------|------|--------|---------------------------------------|
@@ -18,13 +18,21 @@
 | 56   | 合并区间                             | Med  | Java   | [📝](Hot100/merge/思路.md)             |
 | 57   | 插入区间                             | Med  | Go     |                                       |
 | 59   | 螺旋矩阵II                           | Med  | Go     |                                       |
+| 78   | 子集                                 | Med  | Java   | [📝](subsets/思路.md)                 |
+| 90   | 子集 II                              | Med  | Java   |                                       |
+| 96   | 不同的二叉搜索树                     | Med  | Python |                                       |
+| 101  | 对称二叉树                           | Easy | Go     |                                       |
 | 110  | 平衡二叉树                           | Easy | Go     |                                       |
-| 113  | 路径总和II                           | Med  | Go     |                                       |
+| 113  | 路径总和II                           | Med  | Go/Java |                                       |
 | 118  | 杨辉三角                             | Easy | Go     |                                       |
 | 119  | 杨辉三角II                           | Easy | Go     |                                       |
+| 129  | 求根节点到叶节点数字之和             | Med  | Go     |                                       |
 | 150  | 逆波兰表达式求值                     | Med  | Java   |                                       |
+| 173  | 二叉搜索树迭代器                     | Med  | Java   |                                       |
 | 204  | 计数质数                             | Med  | Go     |                                       |
 | 209  | 长度最小的子数组                     | Med  | Go     |                                       |
+| 216  | 组合总和 III                         | Med  | Java   |                                       |
+| 227  | 基本计算器 II                        | Med  | Java   |                                       |
 | 238  | 除自身以外数组的乘积                 | Med  | Java   | [📝](Hot100/productExceptSelf/思路.md) |
 | 239  | 滑动窗口最大值                       | Hard | Java   | [📝](Hot100/maxSlidingWindow/思路.md)  |
 | 264  | 丑数II                               | Med  | Go     |                                       |
@@ -34,6 +42,9 @@
 | 324  | 摆动排序II                           | Med  | Go     | [📝](wiggleSort/思路.md)              |
 | 341  | 扁平化嵌套列表迭代器                 | Med  | Java   |                                       |
 | 371  | 两整数之和                           | Med  | Go     |                                       |
+| 382  | 链表随机节点                         | Med  | Java   |                                       |
+| 384  | 打乱数组                             | Med  | Java   |                                       |
+| 386  | 字典序排数                           | Med  | Java   | [📝](lexicalOrder/思路.md)            |
 | 397  | 整数替换                             | Med  | Go     |                                       |
 | 405  | 数字转换十六进制数                   | Easy | Go     |                                       |
 | 415  | 字符串相加                           | Easy | Go     |                                       |
@@ -84,9 +95,11 @@
 | 852  | 山脉数组的峰顶索引                   | Easy | Go     |                                       |
 | 869  | 重新排序得到2的幂                    | Med  | Go     |                                       |
 | 895  | 最大频率栈                           | Hard | Java   |                                       |
+| 897  | 递增顺序搜索树                       | Med  | Python |                                       |
 | 900  | RLE 迭代器                           | Med  | Java   |                                       |
 | 906  | 超级回文数                           | Hard | Go     | [📝](superpalindromesInRange/思路.md) |
 | 915  | 分割数组                             | Med  | Go     |                                       |
+| 919  | 完全二叉树插入器                     | Med  | Java   | [📝](CBTInserter/思路.md)             |
 | 925  | 长按键入的名字                       | Easy | Go     |                                       |
 | 933  | 最近的请求次数                       | Easy | Python |                                       |
 | 946  | 验证栈序列                           | Med  | Go     |                                       |
@@ -157,6 +170,7 @@
 | 2126 | 摧毁小行星                           | Med  | Go     |                                       |
 | 2161 | 根据给定值划分数组                   | Med  | Go     |                                       |
 | 2213 | 由单个字符重复的最长子串             | Hard | Go     | [📝](longestRepeating/思路.md)        |
+| 2265 | 统计值等于子树平均值的节点数         | Med  | Java   |                                       |
 | 2540 | 最小公共值                           | Easy | Go     |                                       |
 | 2657 | 找到两个数组的前缀公共数组           | Med  | Go     |                                       |
 | 2833 | 距离原点最远的点                     | Easy | Go     |                                       |
@@ -168,4 +182,5 @@
 | 3516 | 唯一异或三元组                       | Med  | Go     | [📝](uniqueXorTriplets/思路.md)       |
 | 3622 | 判断整除性                           | Med  | Go     |                                       |
 | 3870 | 统计区间内的逗号数                   | Med  | Python |                                       |
+| 3871 | 统计范围内的逗号数 II                | Med  | Python |                                       |
 | 3903 | 最小稳定下标I                        | Med  | Java   |                                       |
