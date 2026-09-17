@@ -5,6 +5,9 @@ import (
 	"testing"
 )
 
+// 注意:Expected 必须是函数真实的返回类型 []int。
+// 早期写成 []any{...} 会导致 reflect.DeepEqual 因类型不同而失败,
+// 但 fmt 打印出来两者一模一样,所以很难肉眼发现。
 func Test1(t *testing.T) {
 	common.RunTests(
 		t,
@@ -12,15 +15,15 @@ func Test1(t *testing.T) {
 		[]common.TestCase{
 			{
 				Args:     []any{4},
-				Expected: []any{2, 2},
+				Expected: []int{2, 2},
 			},
 			{
 				Args:     []any{37},
-				Expected: []any{37, 1},
+				Expected: []int{37, 1},
 			},
 			{
 				Args:     []any{122122},
-				Expected: []any{427, 286},
+				Expected: []int{427, 286},
 			},
 		},
 	)

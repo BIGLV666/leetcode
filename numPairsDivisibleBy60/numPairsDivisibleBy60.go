@@ -1,4 +1,4 @@
-package main
+package numPairsDivisibleBy60
 
 func numPairsDivisibleBy60(time []int) int {
 	res := 0
