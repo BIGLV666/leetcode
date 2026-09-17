@@ -1,6 +1,6 @@
 # LeetCode 热题 100 题单
 
-Hot100 专项刷题清单，共 100 题，已完成 7 题。按 LeetCode 官方学习计划顺序排列。
+Hot100 专项刷题清单，共 100 题，已完成 11 题。按 LeetCode 官方学习计划顺序排列。
 
 ✅ 表示已有解法，📝 表示附有解题思路笔记。
 
@@ -20,14 +20,14 @@ Hot100 专项刷题清单，共 100 题，已完成 7 题。按 LeetCode 官方�
 | 76 | 最小覆盖子串 | Hard |  |  |
 | 53 | 最大子数组和 | Med | ✅ | [java](maxSubArray/maxSubArray.java) 📝 |
 | 56 | 合并区间 | Med | ✅ | [java](merge/merge.java) 📝 |
-| 189 | 轮转数组 | Med |  |  |
+| 189 | 轮转数组 | Med | ✅ | [go](rotate/rotate.go) |
 | 238 | 除了自身以外数组的乘积 | Med | ✅ | [java](productExceptSelf/productExceptSelf.java) 📝 |
-| 41 | 缺失的第一个正数 | Hard |  |  |
+| 41 | 缺失的第一个正数 | Hard | ✅ | [go](firstMissingPositive/firstMissingPositive.go) |
 | 73 | 矩阵置零 | Med |  |  |
 | 54 | 螺旋矩阵 | Med |  |  |
 | 48 | 旋转图像 | Med |  |  |
-| 240 | 搜索二维矩阵 II | Med |  |  |
-| 160 | 相交链表 | Easy |  |  |
+| 240 | 搜索二维矩阵 II | Med | ✅ | [go](searchMatrix/searchMatrix.go) |
+| 160 | 相交链表 | Easy | ✅ | [python](getIntersectionNode/getIntersectionNode.py) |
 | 206 | 反转链表 | Easy |  |  |
 | 234 | 回文链表 | Easy |  |  |
 | 141 | 环形链表 | Easy |  |  |
