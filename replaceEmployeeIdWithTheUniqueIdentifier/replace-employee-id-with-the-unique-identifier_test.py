@@ -1,13 +1,11 @@
-"""1378. 使用唯一标识码替换员工ID —— 用 sqlite3 实跑校验 .sql 解法
+"""1378. 使用唯一标识码替换员工ID —— 用 sqlite3 实跑校验 .sql 解法(借助 python/sql_harness.py)。"""
 
-LeetCode 的 SQL 题没有现成的测试框架,这里用 Python 标准库 sqlite3:
-建出题目给的 Employees / EmployeeUNI 两张表 -> 灌入官方示例数据 -> 执行同目录的 .sql -> 断言结果。
-
-这样 SQL 解法也能像其他语言一样被自动化验证,不依赖任何外部数据库。
-"""
-
-import sqlite3
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # 仓库根
+
+from python.sql_harness import run_sql_file
 
 SQL_FILE = Path(__file__).resolve().parent / "replace-employee-id-with-the-unique-identifier.sql"
 
@@ -36,7 +34,7 @@ EMPLOYEE_UNI = [
     (90, 3),
 ]
 
-# 官方期望输出:列顺序是 unique_id、name;行顺序不限,所以比较时排序
+# 官方期望输出:列顺序是 unique_id、name;行顺序不限,比较时排序
 EXPECTED_COLUMNS = ["unique_id", "name"]
 EXPECTED_ROWS = [
     (None, "Alice"),
@@ -47,33 +45,12 @@ EXPECTED_ROWS = [
 ]
 
 
-def strip_comments(sql: str) -> str:
-    """去掉 `--` 行注释,只把可执行语句交给 sqlite3。"""
-    return "\n".join(
-        line for line in sql.splitlines() if not line.strip().startswith("--")
-    )
-
-
-def run_sql(sql: str):
-    """在内存库里建表、灌数据,执行 sql,返回 (列名列表, 结果行)。"""
-    conn = sqlite3.connect(":memory:")
-    try:
-        conn.executescript(SCHEMA)
-        conn.executemany("INSERT INTO Employees VALUES (?, ?)", EMPLOYEES)
-        conn.executemany("INSERT INTO EmployeeUNI VALUES (?, ?)", EMPLOYEE_UNI)
-        cur = conn.execute(strip_comments(sql))
-        columns = [d[0] for d in cur.description]
-        return columns, cur.fetchall()
-    finally:
-        conn.close()
-
-
 def main() -> None:
-    sql = SQL_FILE.read_text(encoding="utf-8")
-    columns, rows = run_sql(sql)
+    results = run_sql_file(SQL_FILE, SCHEMA, {"Employees": EMPLOYEES, "EmployeeUNI": EMPLOYEE_UNI})
 
+    assert len(results) == 1, f"应有 1 条语句, 实际 {len(results)} 条"
+    columns, rows = results[0]
     assert columns == EXPECTED_COLUMNS, f"列名/顺序不符: 期望 {EXPECTED_COLUMNS}, 实际 {columns}"
-    # 题目允许任意行顺序,故按 str 排序后比较(元组里含 None,不能直接比大小)
     assert sorted(rows, key=str) == sorted(EXPECTED_ROWS, key=str), (
         f"结果不符: 期望 {sorted(EXPECTED_ROWS, key=str)}, 实际 {sorted(rows, key=str)}"
     )
