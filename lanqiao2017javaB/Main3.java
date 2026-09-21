@@ -38,6 +38,7 @@ public class Main3 {
                 System.out.println(ans);
             if(p>=2)System.out.println("ambiguous");
             if(p==0)System.out.println("unknown");
+            m--;
         }
 
         scan.close();
