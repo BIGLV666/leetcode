@@ -2,6 +2,7 @@ package findWords
 
 import (
     "reflect"
+    "sort"
     "testing"
 )
 
@@ -14,7 +15,9 @@ func TestFindWords(t *testing.T) {
 func TestFindWordsOptimized(t *testing.T) {
     board := [][]byte{{'a','b'}, {'c','d'}}
     got := findWordsOptimized(board, []string{"ab", "abcd", "acdb", "ab"})
-    if !reflect.DeepEqual(got, []string{"ab", "acdb"}) { t.Fatalf("got %v", got) }
+    // 题目只要求返回所有命中的单词，顺序不作要求，故排序后比较。
+    sort.Strings(got)
+    if want := []string{"ab", "acdb"}; !reflect.DeepEqual(got, want) { t.Fatalf("got %v, want %v", got, want) }
 }
 
 func TestFindWordsEmpty(t *testing.T) {
