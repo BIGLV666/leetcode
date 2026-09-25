@@ -20,13 +20,13 @@ leetcode/
 
 | 语言   | 解答数 | 说明                                  |
 |--------|--------|---------------------------------------|
-| Go     | 145    | 主力语言，题目覆盖最广                |
+| Go     | 150    | 主力语言，题目覆盖最广                |
 | C++    | 4      | 双指针、BFS、二分                     |
-| Java   | 88     | 栈、设计题、回溯、表达式解析、树等    |
+| Java   | 100    | 栈、设计题、回溯、表达式解析、树等    |
 | Python | 34     | 模拟、回溯、数学、树、暴力对拍        |
-| SQL    | 12     | LeetCode 数据库题，用 sqlite3 建表实跑校验 |
+| SQL    | 17     | LeetCode 数据库题，用 sqlite3 建表实跑校验 |
 
-统计口径：各题目目录（含 Hot100/）下的解法文件数，不含测试文件，也不含 common/、leetcode/、sort/、datastructure/、cpp/、java/、python/ 等共享库与学习专题目录。
+统计口径：各题目目录（含 Hot100/）下的解法文件数，不含测试文件；不含 common/、leetcode/、sort/、datastructure/、cpp/、java/、python/ 等共享库与学习专题目录，也不含 luogu/、lanqiao2017javaB/ 等非 LeetCode 题目目录。
 
 ## 特色
 
