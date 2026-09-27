@@ -1,4 +1,4 @@
-package dailyTemperatures;
+package Hot100.dailyTemperatures;
 
 import java.util.ArrayDeque;
 

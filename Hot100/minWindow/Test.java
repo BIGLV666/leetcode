@@ -1,4 +1,4 @@
-package minWindow;
+package Hot100.minWindow;
 
 import java.util.HashMap;
 import java.util.Map;

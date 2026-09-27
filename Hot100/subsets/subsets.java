@@ -1,4 +1,4 @@
-package subsets;
+package Hot100.subsets;
 
 import java.util.ArrayList;
 import java.util.List;

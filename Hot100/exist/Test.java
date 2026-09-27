@@ -1,4 +1,4 @@
-package exist;
+package Hot100.exist;
 
 import java.util.Random;
 

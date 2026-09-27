@@ -1,4 +1,4 @@
-package lowestCommonAncestor;
+package Hot100.lowestCommonAncestor;
 
 import leetcode.TreeNode;
 

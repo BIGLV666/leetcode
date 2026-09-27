@@ -1,4 +1,4 @@
-package isValidBST;
+package Hot100.isValidBST;
 
 import leetcode.TreeNode;
 

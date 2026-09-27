@@ -1,9 +1,9 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from partitionLabels.partitionLabels import Solution
+from Hot100.partitionLabels.partitionLabels import Solution
 
 
 def run(s, expected):
