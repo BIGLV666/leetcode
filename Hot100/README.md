@@ -1,6 +1,6 @@
 # LeetCode 热题 100 题单
 
-Hot100 专项刷题清单，共 100 题，已完成 29 题。按 LeetCode 官方学习计划顺序排列。
+Hot100 专项刷题清单，共 100 题，已完成 31 题。按 LeetCode 官方学习计划顺序排列。
 
 ✅ 表示已有解法，📝 表示附有解题思路笔记。
 
@@ -64,7 +64,7 @@ Hot100 专项刷题清单，共 100 题，已完成 29 题。按 LeetCode 官方
 | 78 | 子集 | Med | ✅ | [java](subsets/subsets.java) 📝 |
 | 17 | 电话号码的字母组合 | Med |  |  |
 | 39 | 组合总和 | Med |  |  |
-| 22 | 括号生成 | Med |  |  |
+| 22 | 括号生成 | Med | ✅ | [java](generateParenthesis/generateParenthesis.java) |
 | 79 | 单词搜索 | Med | ✅ | [java](exist/exist.java) |
 | 131 | 分割回文串 | Med |  |  |
 | 51 | N 皇后 | Hard |  |  |
@@ -96,7 +96,7 @@ Hot100 专项刷题清单，共 100 题，已完成 29 题。按 LeetCode 官方
 | 152 | 乘积最大子数组 | Med |  |  |
 | 416 | 分割等和子集 | Med |  |  |
 | 32 | 最长有效括号 | Hard |  |  |
-| 62 | 不同路径 | Med |  |  |
+| 62 | 不同路径 | Med | ✅ | [python](uniquePaths/uniquePaths.py) |
 | 64 | 最小路径和 | Med |  |  |
 | 5 | 最长回文子串 | Med |  |  |
 | 1143 | 最长公共子序列 | Med |  |  |
