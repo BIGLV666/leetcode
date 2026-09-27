@@ -11,7 +11,7 @@
 | 8    | 字符串转换整数                       | Med  | Go     |                                       |
 | 15   | 三数之和                             | Med  | Java   |                                       |
 | 19   | 删除链表的倒数第N个节点              | Med  | Go     |                                       |
-| 23   | 合并K个升序链表                      | Hard | Go     | [📝](mergeKLists/思路.md)             |
+| 23   | 合并K个升序链表                      | Hard | Go     | [📝](Hot100/mergeKLists/思路.md)      |
 | 38   | 外观数列                             | Med  | Java   |                                       |
 | 41   | 缺失的第一个正数                     | Hard | Go     |                                       |
 | 43   | 字符串相乘                           | Med  | Go     |                                       |
@@ -22,8 +22,8 @@
 | 56   | 合并区间                             | Med  | Java   | [📝](Hot100/merge/思路.md)             |
 | 57   | 插入区间                             | Med  | Go     |                                       |
 | 59   | 螺旋矩阵II                           | Med  | Go     |                                       |
-| 76   | 最小覆盖子串                         | Hard | Java   | [📝](minWindow/思路.md)               |
-| 78   | 子集                                 | Med  | Java   | [📝](subsets/思路.md)                 |
+| 76   | 最小覆盖子串                         | Hard | Java   | [📝](Hot100/minWindow/思路.md)        |
+| 78   | 子集                                 | Med  | Java   | [📝](Hot100/subsets/思路.md)          |
 | 79   | 单词搜索                             | Med  | Java   |                                       |
 | 90   | 子集 II                              | Med  | Java   |                                       |
 | 96   | 不同的二叉搜索树                     | Med  | Python |                                       |

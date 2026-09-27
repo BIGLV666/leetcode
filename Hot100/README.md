@@ -1,6 +1,6 @@
 # LeetCode 热题 100 题单
 
-Hot100 专项刷题清单，共 100 题，已完成 11 题。按 LeetCode 官方学习计划顺序排列。
+Hot100 专项刷题清单，共 100 题，已完成 29 题。按 LeetCode 官方学习计划顺序排列。
 
 ✅ 表示已有解法，📝 表示附有解题思路笔记。
 
@@ -17,7 +17,7 @@ Hot100 专项刷题清单，共 100 题，已完成 11 题。按 LeetCode 官方
 | 438 | 找到字符串中所有字母异位词 | Med | ✅ | [java](findAnagrams/findAnagrams.java) |
 | 560 | 和为 K 的子数组 | Med |  |  |
 | 239 | 滑动窗口最大值 | Hard | ✅ | [java](maxSlidingWindow/maxSlidingWindow.java) 📝 |
-| 76 | 最小覆盖子串 | Hard |  |  |
+| 76 | 最小覆盖子串 | Hard | ✅ | [java](minWindow/minWindow.java) 📝 |
 | 53 | 最大子数组和 | Med | ✅ | [java](maxSubArray/maxSubArray.java) 📝 |
 | 56 | 合并区间 | Med | ✅ | [java](merge/merge.java) 📝 |
 | 189 | 轮转数组 | Med | ✅ | [go](rotate/rotate.go) |
@@ -28,44 +28,44 @@ Hot100 专项刷题清单，共 100 题，已完成 11 题。按 LeetCode 官方
 | 48 | 旋转图像 | Med |  |  |
 | 240 | 搜索二维矩阵 II | Med | ✅ | [go](searchMatrix/searchMatrix.go) |
 | 160 | 相交链表 | Easy | ✅ | [python](getIntersectionNode/getIntersectionNode.py) |
-| 206 | 反转链表 | Easy |  |  |
+| 206 | 反转链表 | Easy | ✅ | [java](reverseList/reverseList.java) |
 | 234 | 回文链表 | Easy |  |  |
-| 141 | 环形链表 | Easy |  |  |
-| 142 | 环形链表 II | Med |  |  |
-| 21 | 合并两个有序链表 | Easy |  |  |
-| 2 | 两数相加 | Med |  |  |
+| 141 | 环形链表 | Easy | ✅ | [java](hasCycle/hasCycle.java) |
+| 142 | 环形链表 II | Med | ✅ | [java](detectCycle/detectCycle.java) |
+| 21 | 合并两个有序链表 | Easy | ✅ | [java](mergeTwoLists/mergeTwoLists.java) |
+| 2 | 两数相加 | Med | ✅ | [java](addTwoNumbers/addTwoNumbers.java) |
 | 19 | 删除链表的倒数第 N 个结点 | Med |  |  |
 | 24 | 两两交换链表中的节点 | Med |  |  |
 | 25 | K 个一组翻转链表 | Hard |  |  |
 | 138 | 随机链表的复制 | Med |  |  |
 | 148 | 排序链表 | Med |  |  |
-| 23 | 合并 K 个升序链表 | Hard |  |  |
+| 23 | 合并 K 个升序链表 | Hard | ✅ | [go](mergeKLists/mergeKLists.go) 📝 |
 | 146 | LRU 缓存 | Med |  |  |
 | 94 | 二叉树的中序遍历 | Easy |  |  |
 | 104 | 二叉树的最大深度 | Easy |  |  |
 | 226 | 翻转二叉树 | Easy |  |  |
-| 101 | 对称二叉树 | Easy |  |  |
+| 101 | 对称二叉树 | Easy | ✅ | [go](checkSymmetricTree/checkSymmetricTree.go) |
 | 543 | 二叉树的直径 | Easy |  |  |
 | 102 | 二叉树的层序遍历 | Med |  |  |
 | 108 | 将有序数组转换为二叉搜索树 | Easy |  |  |
-| 98 | 验证二叉搜索树 | Med |  |  |
+| 98 | 验证二叉搜索树 | Med | ✅ | [java](isValidBST/isValidBST.java) |
 | 230 | 二叉搜索树中第 K 小的元素 | Med |  |  |
-| 199 | 二叉树的右视图 | Med |  |  |
+| 199 | 二叉树的右视图 | Med | ✅ | [go](rightSideView/rightSideView.go) |
 | 114 | 二叉树展开为链表 | Med |  |  |
 | 105 | 从前序与中序遍历序列构造二叉树 | Med |  |  |
 | 437 | 路径总和 III | Med |  |  |
-| 236 | 二叉树的最近公共祖先 | Med |  |  |
+| 236 | 二叉树的最近公共祖先 | Med | ✅ | [java](lowestCommonAncestor/lowestCommonAncestor.java) |
 | 124 | 二叉树中的最大路径和 | Hard |  |  |
 | 200 | 岛屿数量 | Med |  |  |
 | 994 | 腐烂的橘子 | Med |  |  |
 | 207 | 课程表 | Med |  |  |
 | 208 | 实现 Trie (前缀树) | Med |  |  |
 | 46 | 全排列 | Med |  |  |
-| 78 | 子集 | Med |  |  |
+| 78 | 子集 | Med | ✅ | [java](subsets/subsets.java) 📝 |
 | 17 | 电话号码的字母组合 | Med |  |  |
 | 39 | 组合总和 | Med |  |  |
 | 22 | 括号生成 | Med |  |  |
-| 79 | 单词搜索 | Med |  |  |
+| 79 | 单词搜索 | Med | ✅ | [java](exist/exist.java) |
 | 131 | 分割回文串 | Med |  |  |
 | 51 | N 皇后 | Hard |  |  |
 | 35 | 搜索插入位置 | Easy |  |  |
@@ -77,7 +77,7 @@ Hot100 专项刷题清单，共 100 题，已完成 11 题。按 LeetCode 官方
 | 20 | 有效的括号 | Easy |  |  |
 | 155 | 最小栈 | Med |  |  |
 | 394 | 字符串解码 | Med |  |  |
-| 739 | 每日温度 | Med |  |  |
+| 739 | 每日温度 | Med | ✅ | [java](dailyTemperatures/dailyTemperatures.java) |
 | 84 | 柱状图中最大的矩形 | Hard |  |  |
 | 215 | 数组中的第K个最大元素 | Med |  |  |
 | 347 | 前 K 个高频元素 | Med |  |  |
@@ -85,14 +85,14 @@ Hot100 专项刷题清单，共 100 题，已完成 11 题。按 LeetCode 官方
 | 121 | 买卖股票的最佳时机 | Easy |  |  |
 | 55 | 跳跃游戏 | Med |  |  |
 | 45 | 跳跃游戏 II | Med |  |  |
-| 763 | 划分字母区间 | Med |  |  |
+| 763 | 划分字母区间 | Med | ✅ | [python](partitionLabels/partitionLabels.py) |
 | 70 | 爬楼梯 | Easy |  |  |
-| 118 | 杨辉三角 | Easy |  |  |
+| 118 | 杨辉三角 | Easy | ✅ | [go](generate/generate.go) |
 | 198 | 打家劫舍 | Med |  |  |
 | 279 | 完全平方数 | Med |  |  |
 | 322 | 零钱兑换 | Med |  |  |
 | 139 | 单词拆分 | Med |  |  |
-| 300 | 最长递增子序列 | Med |  |  |
+| 300 | 最长递增子序列 | Med | ✅ | [go](lengthOfLIS/lengthOfLIS.go) |
 | 152 | 乘积最大子数组 | Med |  |  |
 | 416 | 分割等和子集 | Med |  |  |
 | 32 | 最长有效括号 | Hard |  |  |
@@ -104,5 +104,5 @@ Hot100 专项刷题清单，共 100 题，已完成 11 题。按 LeetCode 官方
 | 136 | 只出现一次的数字 | Easy |  |  |
 | 169 | 多数元素 | Easy |  |  |
 | 75 | 颜色分类 | Med |  |  |
-| 31 | 下一个排列 | Med |  |  |
+| 31 | 下一个排列 | Med | ✅ | [python](nextPermutation/nextPermutation.py) |
 | 287 | 寻找重复数 | Med |  |  |
