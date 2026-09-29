@@ -1,6 +1,6 @@
 # 题目索引
 
-共 283 题（含文末单独成表的 7 道非纯数字编号题），按题号升序。📝 表示该题附有解题思路笔记。
+共 288 题（含文末单独成表的 7 道非纯数字编号题），按题号升序。📝 表示该题附有解题思路笔记。
 
 | 题号 | 题目                                 | 难度 | 语言   | 笔记                                  |
 |------|--------------------------------------|------|--------|---------------------------------------|
@@ -10,10 +10,11 @@
 | 7    | 整数反转                             | Easy | Go     |                                       |
 | 8    | 字符串转换整数                       | Med  | Go     |                                       |
 | 15   | 三数之和                             | Med  | Java   |                                       |
-| 19   | 删除链表的倒数第N个节点              | Med  | Go     |                                       |
+| 19   | 删除链表的倒数第N个节点              | Med  | Go/Java |                                       |
 | 21   | 合并两个有序链表                     | Easy | Java   |                                       |
 | 22   | 括号生成                             | Med  | Java   |                                       |
 | 23   | 合并K个升序链表                      | Hard | Go     | [📝](Hot100/mergeKLists/思路.md)      |
+| 24   | 两两交换链表中的节点                 | Med  | Java   |                                       |
 | 31   | 下一个排列                           | Med  | Python |                                       |
 | 38   | 外观数列                             | Med  | Java   |                                       |
 | 41   | 缺失的第一个正数                     | Hard | Go     |                                       |
@@ -31,6 +32,7 @@
 | 79   | 单词搜索                             | Med  | Java   |                                       |
 | 90   | 子集 II                              | Med  | Java   |                                       |
 | 96   | 不同的二叉搜索树                     | Med  | Python |                                       |
+| 97   | 交错字符串                           | Med  | Java/Python |                                       |
 | 98   | 验证二叉搜索树                       | Med  | Java   |                                       |
 | 99   | 恢复二叉搜索树                       | Med  | Java   | [📝](recoverTree/思路.md)             |
 | 101  | 对称二叉树                           | Easy | Go     |                                       |
@@ -44,6 +46,7 @@
 | 142  | 环形链表 II                          | Med  | Java   |                                       |
 | 150  | 逆波兰表达式求值                     | Med  | Java   |                                       |
 | 160  | 相交链表                             | Easy | Python |                                       |
+| 164  | 最大间距                             | Hard | Java   | [📝](maximumGap/思路.md)              |
 | 173  | 二叉搜索树迭代器                     | Med  | Java   |                                       |
 | 175  | 组合两个表                                | Easy  | SQL    |                                       |
 | 178  | 分数排名                                 | Med  | SQL    |                                       |
@@ -61,6 +64,7 @@
 | 212  | 单词搜索 II                           | Hard | Go     | [📝](findWords/思路.md)              |
 | 216  | 组合总和 III                         | Med  | Java   |                                       |
 | 227  | 基本计算器 II                        | Med  | Java   |                                       |
+| 234  | 回文链表                             | Easy | Java   |                                       |
 | 236  | 二叉树的最近公共祖先                 | Med  | Java   |                                       |
 | 238  | 除自身以外数组的乘积                 | Med  | Java   | [📝](Hot100/productExceptSelf/思路.md) |
 | 239  | 滑动窗口最大值                       | Hard | Java   | [📝](Hot100/maxSlidingWindow/思路.md)  |
@@ -264,6 +268,7 @@
 | 2196 | 根据描述创建二叉树                   | Med  | Java   |                                       |
 | 2213 | 由单个字符重复的最长子串             | Hard | Go     | [📝](longestRepeating/思路.md)        |
 | 2265 | 统计值等于子树平均值的节点数         | Med  | Java   |                                       |
+| 2267 | 检查是否有合法括号字符串的路径       | Med  | Python | [📝](hasValidPath/思路.md)            |
 | 2331 | 计算布尔二叉树的值                   | Easy | Java   |                                       |
 | 2471 | 逐层排序二叉树所需的最少操作数目     | Med  | Java   | [📝](minimumOperations/思路.md)       |
 | 2540 | 最小公共值                           | Easy | Go     |                                       |

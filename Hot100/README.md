@@ -1,6 +1,6 @@
 # LeetCode 热题 100 题单
 
-Hot100 专项刷题清单，共 100 题，已完成 31 题。按 LeetCode 官方学习计划顺序排列。
+Hot100 专项刷题清单，共 100 题，已完成 34 题。按 LeetCode 官方学习计划顺序排列。
 
 ✅ 表示已有解法，📝 表示附有解题思路笔记。
 
@@ -29,13 +29,13 @@ Hot100 专项刷题清单，共 100 题，已完成 31 题。按 LeetCode 官方
 | 240 | 搜索二维矩阵 II | Med | ✅ | [go](searchMatrix/searchMatrix.go) |
 | 160 | 相交链表 | Easy | ✅ | [python](getIntersectionNode/getIntersectionNode.py) |
 | 206 | 反转链表 | Easy | ✅ | [java](reverseList/reverseList.java) |
-| 234 | 回文链表 | Easy |  |  |
+| 234 | 回文链表 | Easy | ✅ | [java](isPalindrome/isPalindrome.java) |
 | 141 | 环形链表 | Easy | ✅ | [java](hasCycle/hasCycle.java) |
 | 142 | 环形链表 II | Med | ✅ | [java](detectCycle/detectCycle.java) |
 | 21 | 合并两个有序链表 | Easy | ✅ | [java](mergeTwoLists/mergeTwoLists.java) |
 | 2 | 两数相加 | Med | ✅ | [java](addTwoNumbers/addTwoNumbers.java) |
-| 19 | 删除链表的倒数第 N 个结点 | Med |  |  |
-| 24 | 两两交换链表中的节点 | Med |  |  |
+| 19 | 删除链表的倒数第 N 个结点 | Med | ✅ | [java](removeNthFromEnd/removeNthFromEnd.java) |
+| 24 | 两两交换链表中的节点 | Med | ✅ | [java](swapPairs/swapPairs.java) |
 | 25 | K 个一组翻转链表 | Hard |  |  |
 | 138 | 随机链表的复制 | Med |  |  |
 | 148 | 排序链表 | Med |  |  |
