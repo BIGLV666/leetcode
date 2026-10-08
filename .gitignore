@@ -19,3 +19,4 @@ __pycache__/
 # javac 等编译输出目录
 out/
 build-tmp/
+cmake-build*/

@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 
+#include "twoSum.cpp"
+
 using namespace std;
 
 vector<int> twoSum(vector<int>& nums, int target);
