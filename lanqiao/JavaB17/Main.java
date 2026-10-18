@@ -1,4 +1,4 @@
-package lanqiao2017javaB;
+package lanqiao.JavaB17;
 
 import java.util.Arrays;
 import java.util.Scanner;

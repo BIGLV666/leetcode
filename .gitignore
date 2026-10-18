@@ -7,6 +7,9 @@
 # 编译产物
 *.exe
 *.out
+*.class
+# 无扩展名的编译产物(如 twoSum/twoSum_test),注意不会误伤 *_test.go / *_test.cpp
+*_test
 
 # Python 缓存
 __pycache__/
@@ -15,6 +18,7 @@ __pycache__/
 # IDE 配置(本地保留,不入库)
 .idea/
 .vscode/
+*.iml
 
 # javac 等编译输出目录
 out/
