@@ -26,7 +26,7 @@ leetcode/
 | Python | 38     | 模拟、回溯、数学、树、暴力对拍        |
 | SQL    | 17     | LeetCode 数据库题，用 sqlite3 建表实跑校验 |
 
-统计口径：各题目目录（含 Hot100/）下的解法文件数，不含测试文件；不含 common/、leetcode/、sort/、datastructure/、cpp/、java/、python/ 等共享库与学习专题目录，也不含 luogu/、lanqiao/、秦皇岛2025ccpc/ 等非 LeetCode 题目目录。
+统计口径：各题目目录（含 Hot100/）下的解法文件数，不含测试文件；不含 common/、leetcode/、sort/、datastructure/、cpp/、java/、python/ 等共享库与学习专题目录，也不含 luogu/、lanqiao/、牛客/、秦皇岛2025ccpc/ 等非 LeetCode 题目目录。
 
 ## 特色
 
