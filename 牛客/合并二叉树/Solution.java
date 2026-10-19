@@ -14,6 +14,7 @@ package 牛客.合并二叉树;
 import leetcode.TreeNode;
 
 public class Solution {
+    private TreeNode root;
     /**
      * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
      *
@@ -24,7 +25,6 @@ public class Solution {
      */
 
 
-    private TreeNode root;
     public TreeNode mergeTrees (TreeNode t1, TreeNode t2) {
         // write code here
         if(t1==null&&t2==null)return null;
