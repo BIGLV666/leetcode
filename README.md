@@ -13,7 +13,7 @@ leetcode/
 ├── python/              Python 模块（链表、二叉树、序列化）
 ├── Hot100/              热题 100 专项题单（含完整题单与部分解法）
 ├── luogu/               洛谷题解
-├── lanqiao/             蓝桥杯历年题解（Java 组）
+├── lanqiao/             蓝桥杯历年题解（Java 组，含索引）
 ├── 牛客/                牛客题解（周赛、专项练习）
 ├── 秦皇岛2025ccpc/      2025 秦皇岛 CCPC 赛题
 ├── <problem>/           各题目目录（内含解法、测试、部分难题附思路笔记）
@@ -42,7 +42,8 @@ leetcode/
 
 ## 题目索引
 
-→ [PROBLEMS.md](PROBLEMS.md)
+- [LeetCode 题目索引](PROBLEMS.md)
+- [蓝桥杯题解索引](lanqiao/README.md)
 
 ## Hot100 题单
 
