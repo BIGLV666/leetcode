@@ -14,7 +14,7 @@ leetcode/
 ├── Hot100/              热题 100 专项题单（含完整题单与部分解法）
 ├── luogu/               洛谷题解
 ├── lanqiao/             蓝桥杯历年题解（Java 组，含索引）
-├── 牛客/                牛客题解（周赛、专项练习）
+├── 牛客/                牛客题解（周赛、专项练习，含索引）
 ├── 秦皇岛2025ccpc/      2025 秦皇岛 CCPC 赛题
 ├── <problem>/           各题目目录（内含解法、测试、部分难题附思路笔记）
 └── PROBLEMS.md          题目索引
@@ -44,6 +44,7 @@ leetcode/
 
 - [LeetCode 题目索引](PROBLEMS.md)
 - [蓝桥杯题解索引](lanqiao/README.md)
+- [牛客题解索引](牛客/README.md)
 
 ## Hot100 题单
 
