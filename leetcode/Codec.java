@@ -1,13 +1,9 @@
 package leetcode;
-
-import leetcode.TreeNode;
-
 /**
  * 序列化/反序列化快捷入口
  * 提供统一的序列化调用，方便匹配 LeetCode 297 等题目接口
  */
 public class Codec {
-
     // ===== 树 =====
 
     /** 将二叉树序列化为 LeetCode 层序字符串 "[1,2,null,3]" */
@@ -33,5 +29,6 @@ public class Codec {
     }
 
     // 禁止实例化
-    private Codec() {}
+    private Codec() {
+    }
 }

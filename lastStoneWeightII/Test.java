@@ -1,10 +1,11 @@
+package lastStoneWeightII;
 import java.util.Arrays;
 
 public class Test {
     private static final Solution solution = new Solution();
-    private static final TestCase[] testCases = new TestCase[]{
-        new TestCase(new int[]{2, 7, 4, 1, 8, 1}, 1),
-        new TestCase(new int[]{31,26,33,21,40}, 5),
+    private static final TestCase[] testCases = new TestCase[] {
+            new TestCase(new int[] {2, 7, 4, 1, 8, 1}, 1),
+            new TestCase(new int[] {31, 26, 33, 21, 40}, 5),
     };
 
     public static void main(String[] args) {
@@ -15,12 +16,9 @@ public class Test {
                 System.out.println("actual=" + actual + " expect=" + testCase.expect);
             }
         }
-         System.out.println("ok");
+        System.out.println("ok");
     }
-     
 }
-
-
 
 class TestCase {
     int[] stones;
@@ -31,4 +29,3 @@ class TestCase {
         this.expect = expect;
     }
 }
-
