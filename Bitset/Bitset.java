@@ -4,7 +4,7 @@ package Bitset;
 
 class Bitset {
 
-    private int []arr;
+    private final int []arr;
     private int flipCount;
     private int ONE;
 

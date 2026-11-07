@@ -15,6 +15,7 @@ leetcode/
 ├── luogu/               洛谷题解
 ├── lanqiao/             蓝桥杯历年题解（Java 组，含索引）
 ├── 牛客/                牛客题解（周赛、专项练习，含索引）
+├── CF/                  Codeforces 题解（含索引）
 ├── 秦皇岛2025ccpc/      2025 秦皇岛 CCPC 赛题
 ├── <problem>/           各题目目录（内含解法、测试、部分难题附思路笔记）
 └── PROBLEMS.md          题目索引
@@ -26,8 +27,8 @@ leetcode/
 |--------|--------|---------------------------------------|
 | Go     | 154    | 主力语言，题目覆盖最广                |
 | C++    | 4      | 双指针、BFS、二分                     |
-| Java   | 171    | 栈、设计题、回溯、表达式解析、树等    |
-| Python | 38     | 模拟、回溯、数学、树、暴力对拍        |
+| Java   | 172    | 栈、设计题、回溯、表达式解析、树等    |
+| Python | 39     | 模拟、回溯、数学、树、暴力对拍        |
 | SQL    | 17     | LeetCode 数据库题，用 sqlite3 建表实跑校验 |
 
 统计口径：各题目目录（含 Hot100/）下的解法文件数，不含测试文件；不含 common/、leetcode/、sort/、datastructure/、cpp/、java/、python/ 等共享库与学习专题目录，也不含 luogu/、lanqiao/、牛客/、秦皇岛2025ccpc/ 等非 LeetCode 题目目录。
@@ -45,6 +46,7 @@ leetcode/
 - [LeetCode 题目索引](PROBLEMS.md)
 - [蓝桥杯题解索引](lanqiao/README.md)
 - [牛客题解索引](牛客/README.md)
+- [Codeforces 题解索引](CF/README.md)
 
 ## Hot100 题单
 
